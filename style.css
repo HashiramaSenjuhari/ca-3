@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*,
+*::after,
+*::before
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+}
+body
+{
+  background: #FFF;
+}
+/* html
+{
+  scroll-snap-type: y mandatory;
+} */
+::selection
+{
+  background: #4bbfd6ea;
+}
+body::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar-thumb
+{
+	background-color: #000000;
+	border: 2px solid #555555;
+}
+
+section
+{
+  width: 100vw;
+  height: 100vh;
+  scroll-snap-align: start none;
+  background: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+}
+.nav
+{
+  width: 100vw;
+  height: 3lvw;
+}
+a
+{
+  color: #000000;
+  font-size: 1.4vw;
+  float: right;
+  margin: 10px 50px auto;
+}
+.logo-section
+{
+  max-width: 55vw;
+  line-height: 0.6;
+  margin-top: 100px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  top: -8pc;
+}
+.logo-section span:nth-of-type(1)
+{
+  font-size: 16vw;
+  font-weight: 700;
+  margin-left: 50px;
+}
+.logo-section span:nth-of-type(2)
+{
+  font-size: 16vw;
+  font-weight: 700;
+  margin-left: 40px;
+}
+.logo-section p:nth-of-type(2)
+{
+  padding-top: 50px;
+  font-size: 2vw;
+  font-weight: bold;
+  padding-left: 60px;
+}
+.logo-section p:nth-of-type(3)
+{
+  padding-top: 120px;
+  font-size: 1.6vw;
+  font-weight: 300;
+  margin-left: -180px;
+}
+.logo-section svg
+{
+  margin-left: 60vw;
+}
+.banner-wrapper
+{
+  position: relative;
+}
+.banner-wrapper img
+{
+  position: absolute;
+  width: 40vw;
+  animation-name: ramen;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+@keyframes ramen
+{
+  0%
+  {
+    transform: translateY(0);
+  }
+  50%
+  {
+    transform: translateY(1vw);
+  }
+  100%
+  {
+    transform: translateY(0);
+  }
+}
+.random-recipe-container
+{
+  width: 100vw;
+  border-bottom: 1px solid #000;
+  border-top: 1px solid #000;
+}
+section:nth-of-type(2)
+{
+  display: flex;
+  /* justify-content: center;
+  align-items: center; */
+  flex-wrap: wrap;
+}
+.line
+{
+  width: 100vw;
+  height: 2vw;
+  background: #000;
+  position: absolute;
+}
+.random-recipe-container
+{
+  display: flex;
+  flex-wrap: nowrap;
+  height: 100vh;
+}
+.random-recipe-img 
+{
+  width: 40lvw;
+  height: 40vw;
+  /* background: #000; */
+  margin-top: 7lvw;
+  margin-left: 10vw;
+  border: 1px solid #000;
+}
+.random-recipe-tag
+{
+  width: 40lvw;
+  height: 40vw;
+  /* background: #000; */
+  margin-top: 7lvw;
+  margin-left: 1vw;
+  border: 1px solid #000;
+}
+.random-recipe-tag p:nth-of-type(1)
+{
+  font-size: 3vw;
+  font-weight: 700;
+  margin-left: 2vw;
+  margin-top: 1pc;
+}
+.random-recipe-tag p:nth-of-type(2)
+{
+  font-size: 1vw;
+  line-height: 2;
+  margin-left: 2vw;
+  padding-top: 30px;
+}
+.category
+{
+  padding-left: 28px;
+  padding-top: 20px;
+}
+.ingridients
+{
+  padding-left: 2vw;
+  padding-top: 3vw;
+}
+.random-recipe-tag button
+{
+  font-size: 1vw;
+  font-weight: 400;
+  margin-left: 2vw;
+  background: black;
+  outline: none;
+  border: none;
+  padding: 1.5vw 3vw;
+  color: #FFF;
+  cursor: pointer;
+  margin-top: 7vw;
+}
+/* .random-recipe-tag img
+{
+  width: 20lvw;
+
+} */
+.searchbar
+{
+  width: 100vw;
+  height: 7vw;
+  background: #000;
+  color: #FFF;
+  display: flex;
+  gap: 40vw;
+  text-align: center;
+  align-items: center;
+}
+.searchbar p
+{
+  font-size: 1.4rem;
+  padding-left: 10vw;
+}
+.searchbar input
+{
+  width: 29vw;
+  height: 3vw;
+  border-radius: 90px;
+  border: none;
+  background: #000;
+  border: 1px solid #ffffffd7;
+  outline: none;
+  color: #FFF;
+  padding-left: 20px;
+  font-size: 1vw;
+}
+.recent-card
+{
+  width: 80vw;
+  /* background: #000; */
+  margin-left: 10vw;
+  display: flex;
+  flex-wrap: wrap;
+}
+.recent-dish
+{
+  width: 19.4vw;
+  height: 28vw;
+  margin-left: 0.4vw;
+  margin-top: 1vw;
+  border: 1px solid #000000d7;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.135);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+}
+.recent-dish-img , .recent-dish-img img
+{
+  width: 19vw;
+  height: 19vw;
+  background: #000;
+  border-radius: 10px;
+}
+.recent-dish p
+{
+  font-size: 1vw;
+  font-weight: 500;
+  margin-left: 1vw;
+  margin-top: 1vw;
+}
+.recent-dish button
+{
+  text-align: center;
+
+ padding: 1vw 6vw;
+ border-radius: 4vw;
+ border: none;
+ color: #FFF;
+ background: #000;
+ outline: none;
+ margin-top: 1.5vw;
+ margin-left: 2vw;
+ cursor: pointer;
+}
+.winner img
+{
+  transform: translateX(28pc);
+  width:40vw ;
+}
