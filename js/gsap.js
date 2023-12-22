@@ -1,4 +1,10 @@
 gsap.registerPlugin(ScrollTrigger)
+// gsap.registerPlugin(ScrollSmoother) 
+
+// ScrollSmoother.create({
+//   smooth: 1,
+//   effects: true,
+// });
 
 gsap.fromTo('.line',{
   x:-1000,
@@ -7,7 +13,7 @@ gsap.fromTo('.line',{
   x:0,
   scrollTrigger:{
     trigger:'.random-recipe-container',
-    start:'top 80%',
+    // start:'top 80%',
     toggleActions:'play restart none none',
     scrub:true
   }
@@ -20,7 +26,6 @@ gsap.fromTo('.banner-wrapper',{
   x:0,
   scrollTrigger:{
     trigger:'body',
-    // start:'top top'
   }
 } 
 )
@@ -52,20 +57,16 @@ gsap.fromTo('.searchbar',{
   }
 })
 
-
-gsap.fromTo('.recent-card',{
-  scaleY:0,
-    y:-20,
+gsap.fromTo('.random-recipe-img',{
+   x:-40
 },{
-  scaleY:1,
-  y:0,
+  x:0,
   scrollTrigger:{
-    trigger:'.searchbar',
-    start:'top 80%',
+    trigger:'.random-recipe-container',
     scrub:true,
   }
-}
-)
+})
+
 
 const splitTypes = document.querySelectorAll('.reveal-type2')
 

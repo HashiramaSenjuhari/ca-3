@@ -3,65 +3,125 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
-  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" href="./img/recipe.png" type="image/x-icon">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/Responsive.css">
   <title>Document</title>
 </head>
 <body>
   <section>
     <header>
       <div class="nav">
-        <nav><a href="">About me</a></nav>
+        <nav>
+          <a href="">
+            About me
+          </a>
+        </nav>
       </div>
     </header>
     <main class="logo-section">
-      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-        <circle cx="10" cy="10" r="10" fill="#1E1E1E"/>
-        </svg>
+      <span id="dot">
+          .
+      </span>
       <p class="">
-        <span class="reveal-type">Recipe</span>
-        <span class="reveal-type">Gen</span>
-      </p>
-      <p class="reveal-type">
-        Explore now
-      </p>
-      <p class="reveal-type">
-        Try out !
+        <span class="reveal-type">
+          Recipe
+        </span>
+        <span class="reveal-type">
+          Gen
+        </span>
+        <p>
+          Explore it now !
+        </p>
+        <p>
+          Try out today's special and find a new culinary delight
+        </p>
       </p>
     </main>
-    <div class="banner-wrapper">
-      <img src="./img/banner.png" alt="">
-    </div>
+    <img class="banner-wrapper " src="./img/logo.png" alt="">
   </section>
 
   <section>
     <div class="random-recipe-container">
-      <div class="line"></div>
+      <div class="line">
+
+      </div>
       <div  class="random-recipe-container">
-        <img class="random-recipe-img" src="" alt="">
+        <div>
+          <img class="random-recipe-img" src="" alt="">
+          <div class="chef-choice">Chef's Choice</div>
+        </div>
         <div class="random-recipe-tag">
-          <p class="reveal-type2 dish-name">Dish Name</p>
-          <p class="reveal-type2 step"></p>
-          <p class="category"></p>
-          <!-- <p class="ingridients">Ingridients</p> -->
-          <button>Try out now !</button>
-          <!-- <img src="./img/cook.svg" alt=""> -->
+          <p class="reveal-type2 dish-name">
+            Want to know more about this dish ?
+          </p>
+          <p class="reveal-type2 step">
+
+          </p>
+          <p class="category">
+          </p>
+          <button class="tryit" onclick=" window.location.href = 'recipe.html'">
+            Try it now !
+          </button>
+          <svg id="vector" xmlns="http://www.w3.org/2000/svg" width="82" height="90" viewBox="0 0 82 90" fill="none">
+            <path id="vector" d="M76.9955 88.9993C92.5717 -3.81549 32.622 -3.84879 0.70017 7.73641" stroke="black" stroke-width="3"/>
+            </svg>
+          <img id="chef" src="./img/chef.png" alt="">
+        </div>
+
+        <div class="random-recipe-tag remake">
+          <p class="reveal-type2 dish-name">
+            Ingredient
+          </p>
+          <p class="reveal-type2 ingridient">
+          </p>
+          <p class="category">
+          </p>
         </div>
       </div>
     </div>
   </section>
+
   <section id="section-3">
     <div class="searchbar">
-      <p>Recipe Tried out</p>
-      <input type="text" placeholder="Search your favorite dish">
+      <p class="recipe-name">
+        Recipe Name
+      </p>
+      <span class="search">
+          <input type="text" placeholder="Search your favorite dish">
+          <button id="search">
+            search
+          </button>
+      </span>
     </div>
-    <!-- <div class="recent-card"> -->
+    <div class="recent-card">
     <span class="winner">
       <img class="abstract" src="./img/search.svg" alt="">
-      <!-- <p>Search something</p> -->
+      <p id="searchsome">
+        Search something
+      </p>
     </span>
-    <!-- </div> -->
+    </div>
   </section>
+  <section class="section-3">
+    <div class="searchbar">
+      <p class="recipe-name">
+        Recipe's Searched
+      </p>
+      <!-- <span class="search">
+          <input type="text" placeholder="Search your recent dish">
+          <button id="search">
+            search
+          </button>
+      </span> -->
+    </div>
+    <div class="recent-recipe">
+
+    </div>
+  </section>
+<footer>
+  Made with billion narutomaki 🍥
+</footer>
 <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script> 
 <script src="https://unpkg.com/gsap@3.9.0/dist/gsap.min.js"></script>
 <script src="https://unpkg.com/gsap@3.9.0/dist/ScrollTrigger.min.js"></script>
@@ -71,5 +131,6 @@
 <script src="./js/gsap.js"></script>
 <script src="./js/randomMeal.js"></script>
 <script src="./js/searchMeal.js"></script>
+<script src="./js/theme.js"></script>
 </body>
 </html>

@@ -1,0 +1,144 @@
+/* Styles for a device with a width of 320px and height of 644px */
+@media only screen and (width: 320px) and (height: 644px) {
+  /* Your specific styles for this screen size */
+  /* .logo-section
+  {
+  margin-top: -50vw;
+  margin-left: -10vw;
+  }
+  .logo-section span:nth-of-type(2)
+  {
+  font-size: 5rem;
+  }
+  .logo-section span:nth-of-type(1)
+  {
+  font-size: 5rem;
+  }
+  .logo-section span:nth-of-type(2)
+  {
+  font-size: 5rem;
+  padding-left: 2vw;
+  }
+  .logo-section p:nth-of-type(2)
+  {
+  font-size: 0.8rem;
+  }
+  .logo-section p:nth-of-type(3)
+  {
+  margin-top: -10vw;
+  font-size: 0.5rem;
+  }
+  .banner-wrapper
+  {
+    margin-top: 80vw;
+  } */
+  /* ---------------------------------- */
+  /* section2 */
+  /* section:nth-of-type(2)
+  {
+    height: 100lvh;
+  }
+.line
+{
+  height: 1rem;
+}
+.random-recipe-container
+{
+  display: flex;
+  flex-wrap: nowrap;
+  height: 100lvh;
+}
+.random-recipe-img 
+{
+  width: 18rem;
+  height: 18rem;
+  /* background: #000; */
+  /* margin-top: 7lvw;
+  margin-left: 5vw;
+  border: 1px solid #000;
+}
+.random-recipe-tag
+{
+  width: 30lvw;
+  height: 12.1rem;
+  /* background: #000; */
+  /* margin-top: 20rem;
+  margin-left: -10rem;
+  border: 1px solid #000;
+} */
+/* .remake
+{
+  width: rem;
+  overflow-y: scroll;
+  margin-left: -14.2rem;
+} */
+.dish-name
+{
+  font-size: 1rem;
+} */
+.random-recipe-tag p:nth-of-type(1)
+{
+  font-size: 2.5vw;
+  font-weight: 700;
+  margin-left: 2vw;
+  margin-top: 1vw;
+  transition: 1s;
+}
+.random-recipe-tag p:nth-of-type(2)
+{
+  font-size: 1vw;
+  line-height: 2;
+  margin-left: 2vw;
+  padding-top: 30px;
+}
+.category
+{
+  padding-left: 28px;
+  padding-top: 20px;
+}
+.ingridients
+{
+  padding-left: 2vw;
+  padding-top: 3vw;
+}
+.random-recipe-tag button
+{
+  font-size: 1vw;
+  font-weight: 400;
+  margin-left: 2vw;
+  background: black;
+  outline: none;
+  border: none;
+  padding: 1.5vw 3vw;
+  color: #FFF;
+  cursor: pointer;
+  margin-top: 4vw;
+}
+.ingridient
+{
+  font-size: 2rem;
+} */
+}
+
+/* Extra Small Devices (phones) */
+@media only screen and (max-width: 767px) {
+  /* Styles for small screens */
+}
+
+/* Small Devices (portrait tablets and large phones) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* Styles for tablets and larger phones in portrait orientation */
+}
+
+/* Medium Devices (landscape tablets) */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  section:nth-of-type(1)
+  {
+
+  }
+}
+
+/* Large Devices (laptops and desktops) */
+@media only screen and (min-width: 1200px) {
+  /* Styles for laptops and desktops */
+}

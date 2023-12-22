@@ -1,0 +1,24 @@
+
+// document.addEventListener('DOMContentLoaded', () => {
+//   displayPastCards();
+// });
+
+// function saveRecentCard(cardInfo) {
+//   let recentCards = JSON.parse(localStorage.getItem('recentCards')) || [];
+//   recentCards.push(cardInfo);
+//   localStorage.setItem('recentCards', JSON.stringify(recentCards));
+// }
+
+// function displayPastCards() {
+//   const recentCardContainer = document.querySelector('.recent-card');
+//   const fragment = document.createDocumentFragment();
+
+//   const recentCards = JSON.parse(localStorage.getItem('recentCards')) || [];
+
+//   for (const cardInfo of recentCards) {
+//     fragment.appendChild(createRecentDishElement(cardInfo.mealThumb, cardInfo.mealCategory, cardInfo.mealName, cardInfo.mealOrigin));
+//   }
+
+//   recentCardContainer.innerHTML = '';
+//   recentCardContainer.appendChild(fragment);
+// }

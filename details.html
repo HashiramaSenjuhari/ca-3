@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <link rel="stylesheet" href="./css/recipe.css">
+  <title>Meal Details</title>
+</head>
+<body>
+  <!-- <h1>Meal Details</h1> -->
+  <div id="mealDetails"></div>
+  <section>
+    <div  class="random-recipe-container">
+      <img class="random-recipe-img" src="" alt="">
+      <p class="dish-name-in-img dish-name">Dish Name</p>
+
+      <div class="random-recipe-tag">
+        <!-- <p class="reveal-type2 dish-name">
+          Dish Name
+        </p> -->
+        <p class="reveal-type2 step">
+
+        </p>
+        <p class="category">
+        </p>
+        <!-- <button onclick=" window.location.href = 'recipe.html'">
+          Try it now !
+        </button> -->
+      </div>
+
+      <div class="random-recipe-tag remake">
+        <p class="reveal-type2 dish-name">
+          Ingredient
+        </p>
+        <p class="reveal-type2 ingridients" style="margin-left: 2vw; margin-top: 2vw;">
+        </p>
+        <p class="category">
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<main>
+  <div class="random-recipe-container-instruction-line">
+  </div>
+  <div class="random-recipe-container-instruction">
+    <p>Intstuction</p>
+    <button class="sound">
+      <span class="material-symbols-outlined">
+        volume_up
+        </span>
+    </button>
+    <p class="instruction">
+    </p>
+  </div>
+  <!-- <div>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam corrupti eos ex? A quas officiis, facilis incidunt sunt distinctio est aspernatur rem cum vero dolore, ipsum quos nihil accusantium ad.</p>
+  </div> -->
+</main>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+  // Extract meal details from URL parameters
+  const urlParams = new URLSearchParams(window.location.search)
+  const mealName = urlParams.get('mealName')
+  const mealOrigin = urlParams.get('mealOrigin')
+  const mealInstruction = urlParams.get('mealInstruction')
+  const mealThumb = urlParams.get('mealThumb')
+  const mealCategory = urlParams.get('mealCategory')
+  const ingredients = urlParams.get('ingredients')
+  const sound = urlParams.get('sound')
+
+  // Select the correct elements based on the HTML structure
+  const recipeImg = document.querySelector('.random-recipe-img')
+  const dishNameElement = document.querySelector('.dish-name-in-img')
+  const instructionElement = document.querySelector('.instruction')
+  const ingredientsElement = document.querySelector('.ingridients')
+  const categoryElement = document.querySelector('.category')
+  const soundButton = document.querySelector('.sound');
+
+  // Update content
+  recipeImg.src = mealThumb
+  dishNameElement.textContent = mealName
+  instructionElement.textContent = `Instructions: ${mealInstruction}`
+  ingredientsElement.innerHTML += ` Ingredients: <br><br>${ingredients}<br>`;
+  categoryElement.textContent = `Category: ${mealCategory}`
+
+  const activateSound = () => {
+      let speech = new SpeechSynthesisUtterance();
+      speech.text = ingredients;
+      window.speechSynthesis.speak(speech);
+    }
+    soundButton.addEventListener('click', activateSound)
+})
+  </script>
+ <!-- <script defer src="./js/searchMeal.js"></script> -->
+</body>
+</html>
